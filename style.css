@@ -1,3 +1,5 @@
+/* main css */
+
 :root {
     --color_title: #080808;
     --color_title_rgb: 8, 8, 8;
@@ -58,9 +60,18 @@ body, html {
     text-align: center;
 }
 #wrap-center {
-    position: relative;
     display: inline-block;
     width: 1280px;
+}
+#header {
+    position: relative;
+    width: 1280px;
+    height: 215px;
+}
+/* top-btn css */
+
+#top-btn {
+    height: 48px;
 }
 #hamberger {
     position: absolute;
@@ -80,7 +91,7 @@ body, html {
 #pay {
     display: inline-block;
     position: absolute;
-    left: 34px;
+    left: 48px;
     top: 0px;
     padding: 8px;
 }
@@ -91,7 +102,82 @@ body, html {
     background-size: 441px 424px;
     background-position: -33px -287px;
 }
+#talk {
+    display: inline-block;
+    position: absolute;
+    right: 96px;
+    top: 0px;
+    padding: 8px;
+}
+#talk > div {
+    width: 32px;
+    height: 32px;
+    background-image: url(./img_folder/sp_main.png);
+    background-size: 443px 424px;
+    background-position: -165px -287px;
+}
+#notify {
+    display: inline-block;
+    position: absolute;
+    right: 48px;
+    top: 0px;
+    padding: 8px;
+}
+#notify > div {
+    width: 32px;
+    height: 32px;
+    background-image: url(./img_folder/sp_main.png);
+    background-size: 443px 424px;
+    background-position: -246px -229px;
+}
+#shopping {
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    top: 0px;
+    padding: 8px;
+}
+#shopping > div {
+    width: 32px;
+    height: 32px;
+    background-image: url(./img_folder/sp_main.png);
+    background-size: 443px 424px;
+    background-position: -99px -287px;
+}
 #container {
     background-color: yellow;
     height: 2000px;
+}
+
+/* search */
+
+#search {
+    background-color: #fff;
+    position: absolute;
+    top: 52px;
+    left: 50%;
+    border: 1px solid #03c75a;
+    width: 706px;
+    height: 60px;
+    border-radius: 33px;
+    transform: translateX(-50%);
+}
+#search_group {
+    position: relative;
+    width: 706px;
+    height: 58px;
+}
+#search_logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 17px 16px 17px 27px;
+}
+#search_logo > div {
+    background-image: url(./img_folder/sp_main.png);
+    /* background-size: 443px 424px; */
+    background-position: -648px -689px;
+    width: 53px;
+    height: 53px;
+    background-repeat: no-repeat;
 }
