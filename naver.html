@@ -58,7 +58,7 @@
             --color_enter: #e538e2;
             --color_enter_rgb: 229, 56, 226;
         }
-        body, html {
+        body, html, form {
             margin: 0;
             padding: 0;
         }
@@ -129,6 +129,18 @@
         #main {
             height: 2000px;
         }
+        #search {
+            position: absolute;
+            top: 52px;
+            left: 50%;
+            z-index: 10;
+            width: 706px;
+            height: 58px;
+            border: 1px solid #03c75a;
+            border-radius: 33px;
+            background-color: #fff;
+            transform: translateX(-50%);
+        }
     </style>
 </head>
 <body>
@@ -151,7 +163,11 @@
                     <div></div>
                 </button>
             </div>
-            <div id="search"></div>
+            <div id="search">
+                <span id="search-logo">
+                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M16.273 12.845 7.376 0H0v24h7.727V11.155L16.624 24H24V0h-7.727v12.845z"></path></svg>
+                </span>
+            </div>
             <div id="nav"></div>
             <div id="main"></div>
         </div>
